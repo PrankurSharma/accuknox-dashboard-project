@@ -2,7 +2,6 @@ import { Drawer } from "antd";
 import { useDispatch, useSelector } from "react-redux";
 import AddWidgetDrawer from "../components/AddWidgetDrawer";
 import { openDrawer } from "../features/Dashboard/drawerSlice";
-import { CloseOutlined } from "@ant-design/icons";
 
 
 //General component for opening right drawer. In this case, we have only one drawer component, however, we can add the component in the below object if we want to include it in a drawer.

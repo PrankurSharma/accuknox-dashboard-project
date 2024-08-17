@@ -1,4 +1,4 @@
-import { createAsyncThunk, createSlice, current, nanoid } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice, nanoid } from "@reduxjs/toolkit";
 
 // this slice consists of the dashboard data state. Consists of the following reducers:
 // 1. Add Widget 2. Update Widgets(Bulk update and delete) 3. Search widget
@@ -41,7 +41,6 @@ export const dashboardSlice = createSlice({
                 widgetName: widgetName,
                 widgetText: widgetText
             };
-            console.log("Adding widget: ", widget);
             return {
                 ...state,
                 categories: state.categories.map(category => {

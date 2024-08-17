@@ -1,7 +1,6 @@
-import { useDispatch, useSelector } from "react-redux";
-import Box from "../custom/Box";
+import { useSelector } from "react-redux";
 import WidgetCards from "./WidgetCards";
-import { Button, Col, Row } from "antd";
+import { Row } from "antd";
 import AddWidgetCard from "./AddWidgetCard";
 import SpanHeading from "../custom/SpanHeading";
 
@@ -9,7 +8,6 @@ import SpanHeading from "../custom/SpanHeading";
 
 export default function CategoryCards(props) {
     let { category } = props;
-    let dispatch = useDispatch();
     let searchVal = useSelector(state => state.dashboard.searchQuery);
     if (category.widgets.length === 0 && searchVal !== "") {
         return null;

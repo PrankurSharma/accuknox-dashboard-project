@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Checkbox, Input, Tabs } from "antd";
+import { Button, Checkbox, Tabs } from "antd";
 import { useDispatch, useSelector } from "react-redux";
 import { openDrawer } from "../features/Dashboard/drawerSlice";
 import { updateWidgets } from "../features/Dashboard/dashboardSlice";
@@ -11,10 +11,8 @@ import SpanHeading from "../custom/SpanHeading";
 
 function TabContent({ category, setCategory }) {
     const [checkedVals, setCheckedVals] = useState(category.checkedVals);
-    console.log("Enters...");
     const handleChange = (checkedValues) => {
         setCheckedVals([...checkedValues]);
-        console.log("Checked vals: ", checkedValues, category.widgets.filter(x => checkedValues.includes(x.widgetId)));
         setCategory(cat => {
             return cat.map(val => {
                 if (val.id === category.id) {
@@ -37,10 +35,6 @@ function TabContent({ category, setCategory }) {
 
 export default function AddWidgetDrawer(props) {
 
-    let { activeKey } = props;
-
-    console.log("getting active key: ", activeKey);
-
     let dispatch = useDispatch();
     // let filteredDashboardData = useSelector(selectFilteredData);
     let dashboardData = useSelector(state => state.dashboard.categories);
@@ -61,7 +55,6 @@ export default function AddWidgetDrawer(props) {
     }
 
     const handleConfirm = () => {
-        console.log("My dashboard: ", myDashboardData);
         dispatch(updateWidgets([...myDashboardData]));
         dispatch(openDrawer({
             drawerType: false,

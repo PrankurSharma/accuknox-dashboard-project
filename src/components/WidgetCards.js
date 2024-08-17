@@ -1,4 +1,4 @@
-import { Button, Col } from "antd";
+import { Col } from "antd";
 import Box from "../custom/Box";
 import { useDispatch, useSelector } from "react-redux";
 import { CloseOutlined } from "@ant-design/icons";
@@ -11,7 +11,6 @@ export default function WidgetCards(props) {
     let { widgetId, categoryId, widgetName, widgetText } = props;
     let dashboardData = useSelector(state => state.dashboard.categories);
     let dispatch = useDispatch();
-    console.log("Getting widget: ", widgetName);
     return (
         <Col xs={24} sm={12} md={12} lg={8} style={{minWidth: "250px"}}>
             <Box title={widgetName} extra={<CloseOutlined style={{color: "red"}} onClick={() => {

@@ -8,12 +8,12 @@
                 {
                     "widgetId": "1",
                     "widgetName": "Cloud Accounts",
-                    "widgetText": ""
+                    "widgetText": "Sample widget text."
                 },
                 {
                     "widgetId": "2",
                     "widgetName": "Cloud Account Risk Assessment",
-                    "widgetText": ""
+                    "widgetText": "Lorem ipsum sit amet."
                 }
             ]
         },
@@ -25,7 +25,7 @@
                 {
                     "widgetId": "1",
                     "widgetName": "Top 5 Namespace Specific Alerts",
-                    "widgetText": ""
+                    "widgetText": "My widget text."
                 },
                 {
                     "widgetId": "2",
@@ -42,7 +42,7 @@
                 {
                     "widgetId": "1",
                     "widgetName": "Image Risk Assessment",
-                    "widgetText": ""
+                    "widgetText": "This is image risk assessment widget"
                 },
                 {
                     "widgetId": "2",
@@ -59,7 +59,7 @@
                 {
                     "widgetId": "1",
                     "widgetName": "Sample Widget-1",
-                    "widgetText": ""
+                    "widgetText": "This is ticket widget"
                 },
                 {
                     "widgetId": "2",

@@ -13,7 +13,9 @@ To run this project locally:
 2. Open the terminal and type "npm i" to install all the dependencies.
 3. After installation gets completed, type "npm start" to start the project.
 
-You may also visit: https://efe1bd61.accuknox-dashboard-project.pages.dev/ to access this project.
+You may also visit: https://accuknox-dashboard-project.pages.dev/ to access this project.
+
+NOTE: In case of widgets, I have added widget name and widget text only as given in the instructions for submitting the assignment.
 
 Comments have been provided wherever required.
 

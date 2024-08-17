@@ -15,7 +15,9 @@ To run this project locally:
 
 You may also visit: https://accuknox-dashboard-project.pages.dev/ to access this project.
 
-NOTE: In case of widgets, I have added widget name and widget text only as given in the instructions for submitting the assignment.
+NOTE: 
+1. In case of widgets, I have added widget name and widget text only as given in the instructions for submitting the assignment.
+2. Only the necessary areas in the assignment have been added on the UI. All the other non functional areas that were not in the scope of the assignment have not been added on the UI.
 
 Comments have been provided wherever required.
 
